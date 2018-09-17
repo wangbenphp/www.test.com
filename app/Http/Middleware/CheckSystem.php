@@ -18,11 +18,11 @@ class CheckSystem
     {
         $host = $request->getHost();
         if (System::isMobile()) {
-            if (strpos($host, 'www.test.com') !== false) {
+            if (strpos($host, 'www.playingman.cn') !== false) {
                 return redirect()->route('mobile');
             }
         } else {
-            if (strpos($host, 'm.test.com') !== false) {
+            if (strpos($host, 'm.playingman.cn') !== false) {
                 return redirect()->route('pc');
             }
         }
